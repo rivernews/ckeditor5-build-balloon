@@ -13,6 +13,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -26,8 +27,6 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
-alert('hahhaha ckedit');
-
 export default class BalloonEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build.
@@ -39,6 +38,7 @@ BalloonEditor.builtinPlugins = [
 	Bold,
 	Italic,
 	Strikethrough,
+	Code,
 
 	BlockQuote,
 	EasyImage,

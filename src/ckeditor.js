@@ -24,7 +24,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import * as MediaPlugin from "@akilli/ckeditor5-media/src/media";
+import Embed from 'ckeditor5-embed/src/embed';
 
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -52,7 +52,7 @@ BalloonEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
-	MediaPlugin,
+	Embed,
 
 	Link,
 	List,
@@ -65,7 +65,7 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading', 'code', '|',
 			'bold', 'italic', 'strikethrough', '|',
-			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link'
+			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'embed'
 		],
 	},
 	image: {

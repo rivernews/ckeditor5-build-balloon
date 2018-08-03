@@ -65,7 +65,7 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading', 'code', '|',
 			'bold', 'italic', 'strikethrough', '|',
-			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'media'
+			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link'
 		],
 	},
 	image: {

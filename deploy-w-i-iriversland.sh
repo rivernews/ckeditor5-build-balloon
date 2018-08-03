@@ -7,8 +7,8 @@ else
     git_commit_msg="$1"
 fi
 
-git add . && git commit -m "$git_commit_msg" && git push && \
 npm run build && \
+git add . && git commit -m "$git_commit_msg" && git push && \
 cp build/ckeditor.js ../iriversland2/frontend/src/assets/ckeditor.js && \
 echo SUCCESS && return
 

@@ -25,6 +25,7 @@
     "build"
   ],
   "devDependencies": {
+    "@akilli/ckeditor5-media": "0.0.0",
     "@ckeditor/ckeditor5-adapter-ckfinder": "^10.0.2",
     "@ckeditor/ckeditor5-autoformat": "^10.0.2",
     "@ckeditor/ckeditor5-basic-styles": "^10.0.2",

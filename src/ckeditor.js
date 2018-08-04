@@ -16,7 +16,6 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-// import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -24,7 +23,13 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import Embed from 'ckeditor5-embed/src/embed';
+
+// import Embed from 'ckeditor5-embed/src/embed';
+import Media from '@akilli/ckeditor5-media/src/media';
+import MediaBrowser from '@akilli/ckeditor5-media/src/mediabrowser';
+import MediaCaption from '@akilli/ckeditor5-media/src/mediacaption';
+import MediaStyle from '@akilli/ckeditor5-media/src/mediastyle';
+import MediaToolbar from '@akilli/ckeditor5-media/src/mediatoolbar';
 
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -44,7 +49,6 @@ BalloonEditor.builtinPlugins = [
 	Code,
 
 	BlockQuote,
-	// EasyImage,
 	Heading,
 
 	Image,
@@ -52,7 +56,12 @@ BalloonEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
-	Embed,
+	
+	Media,
+    MediaBrowser,
+    MediaCaption,
+    MediaStyle,
+    MediaToolbar,
 
 	Link,
 	List,
@@ -65,9 +74,10 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading', 'code', '|',
 			'bold', 'italic', 'strikethrough', '|',
-			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'embed'
+			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'mediaBrowser'
 		],
 	},
+
 	image: {
 		toolbar: [
 			'imageStyle:full',
@@ -76,6 +86,18 @@ BalloonEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
+
+	heading: {
+		options: [
+			/** Customizing headings: https://docs.ckeditor.com/ckeditor5/latest/features/headings.html#configuring-heading-levels */
+			{ model: 'paragraph', title: 'Paragraph', view: { name: 'p', classes: '' }, priority: 'high' },
+			{ model: 'heading1', view: { name: 'h1', classes: '' }, title: 'Heading 1', priority: 'high' },
+			{ model: 'heading2', view: { name: 'h2', classes: '' }, title: 'Heading 2', priority: 'high' },
+			{ model: 'heading3', view: { name: 'h3', classes: '' }, title: 'Heading 3', priority: 'high' },
+			{ model: 'heading4', view: { name: 'h4', classes: '' }, title: 'Heading 4', priority: 'high' },
+		]
+	},
+	
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };

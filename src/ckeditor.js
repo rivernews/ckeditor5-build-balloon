@@ -11,8 +11,8 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
-import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+// import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+// import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -34,8 +34,8 @@ BalloonEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
-	Strikethrough,
-	Code,
+	// Strikethrough,
+	// Code,
 	BlockQuote,
 	EasyImage,
 	Heading,
@@ -53,8 +53,8 @@ BalloonEditor.builtinPlugins = [
 BalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading', 'code', 'blockQuote', '|',
-			'bold', 'italic', 'strikethrough', 'bulletedList', 'numberedList', '|',
+			'heading', 'blockQuote', '|',
+			'bold', 'italic', 'bulletedList', 'numberedList', '|',
 			'imageUpload', '|', 'link'
 		],
 	},

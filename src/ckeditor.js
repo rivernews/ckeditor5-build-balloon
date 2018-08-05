@@ -24,13 +24,13 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 
-import Embed from 'ckeditor5-embed/src/embed';
+// import Embed from 'ckeditor5-embed/src/embed';
 
-import Media from './ckeditor5-media/src/media';
-import MediaCaption from './ckeditor5-media/src/mediacaption';
-import MediaStyle from './ckeditor5-media/src/mediastyle';
-import MediaToolbar from './ckeditor5-media/src/mediatoolbar';
-import MediaBrowser from './ckeditor5-media/src/mediabrowser';
+// import Media from './ckeditor5-media/src/media';
+// import MediaCaption from './ckeditor5-media/src/mediacaption';
+// import MediaStyle from './ckeditor5-media/src/mediastyle';
+// import MediaToolbar from './ckeditor5-media/src/mediatoolbar';
+// import MediaBrowser from './ckeditor5-media/src/mediabrowser';
 
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -58,13 +58,13 @@ BalloonEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	
-	Embed,
+	// Embed,
 
-	Media,
-    MediaBrowser,
-    MediaCaption,
-    MediaStyle,
-    MediaToolbar,
+	// Media,
+    // MediaBrowser,
+    // MediaCaption,
+    // MediaStyle,
+    // MediaToolbar,
 
 	Link,
 	List,
@@ -78,7 +78,7 @@ BalloonEditor.defaultConfig = {
 			'heading', 'code', '|',
 			'bold', 'italic', 'strikethrough', '|',
 			'imageUpload', 'bulletedList', 'numberedList', 'blockQuote', 'link', '|',
-			'mediaBrowser', 'embed'
+			// 'mediaBrowser', 'embed'
 		],
 	},
 
@@ -91,8 +91,8 @@ BalloonEditor.defaultConfig = {
 		]
 	},
 
-	media: {
-	},
+	// media: {
+	// },
 
 	heading: {
 		options: [

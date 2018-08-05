@@ -3,7 +3,7 @@ import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 
 /** for button in toolbar */
-import imageIcon from '@ckeditor/ckeditor5-core/theme/icons/pencil.svg';
+import pencilIcon from '@ckeditor/ckeditor5-core/theme/icons/pencil.svg';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
 export default class InsertUrlImage extends Plugin {
@@ -15,7 +15,7 @@ export default class InsertUrlImage extends Plugin {
 
             view.set( {
                 label: 'Insert image by url',
-                icon: imageIcon,
+                icon: pencilIcon,
                 tooltip: true
             } );
 

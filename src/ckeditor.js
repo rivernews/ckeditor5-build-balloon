@@ -58,15 +58,6 @@ BalloonEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
-	InsertUrlImage,
-	
-	// Embed,
-
-	// Media,
-    // MediaBrowser,
-    // MediaCaption,
-    // MediaStyle,
-    // MediaToolbar,
 
 	Link,
 	List,
@@ -81,8 +72,6 @@ BalloonEditor.defaultConfig = {
 			'bold', 'italic', 'strikethrough', 'bulletedList', 'numberedList', '|',
 			'imageUpload', '|', 'link'
 
-			// 'insertUrlImage'
-			
 			// 'mediaBrowser', 'embed'
 		],
 	},
@@ -95,9 +84,6 @@ BalloonEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
-
-	// media: {
-	// },
 
 	heading: {
 		options: [

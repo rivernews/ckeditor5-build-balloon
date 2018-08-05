@@ -25,7 +25,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
 export default class CustomBalloonEditor extends BalloonEditorBase {}
 
-// Plugins to include in the build.
+// Plugins to include in the build. 
 BalloonEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,

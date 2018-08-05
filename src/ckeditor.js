@@ -26,7 +26,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 export default class CustomBalloonEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build. 
-BalloonEditor.builtinPlugins = [
+CustomBalloonEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -46,7 +46,7 @@ BalloonEditor.builtinPlugins = [
 ];
 
 // Editor configuration.
-BalloonEditor.defaultConfig = {
+CustomBalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',

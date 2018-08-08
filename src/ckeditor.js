@@ -25,6 +25,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 import Embed from 'ckeditor5-embed/src/embed';
 import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
 
@@ -51,6 +52,7 @@ CustomBalloonEditor.builtinPlugins = [
 
 	Strikethrough,
 	Code,
+	Alignment,
 	Embed,
 	InsertUrlImage
 ];
@@ -61,17 +63,9 @@ CustomBalloonEditor.defaultConfig = {
 		items: [
 			'heading', 'blockQuote', 'strikethrough', 'code', '|',
 			'bold', 'italic', 'bulletedList', 'numberedList', '|',
-			'imageUpload', 'insertUrlImage', '|', 'link', 'embed'
+			'alignment', '|',
+			'imageUpload', 'insertUrlImage', 'embed', '|', 'link'
 		],
-	},
-
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
 	},
 
 	heading: {
@@ -84,6 +78,20 @@ CustomBalloonEditor.defaultConfig = {
 			{ model: 'heading4', view: { name: 'h4', classes: '' }, title: 'Heading 4', priority: 'high' },
 		]
 	},
+
+	alignment: {
+		options: [ 'left', 'right', 'center', 'justify' ]
+	},
+
+	image: {
+		toolbar: [
+			'imageStyle:full',
+			'imageStyle:side',
+			'|',
+			'imageTextAlternative'
+		]
+	},
+
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };

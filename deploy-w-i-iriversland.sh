@@ -7,7 +7,14 @@ else
     git_commit_msg="$1"
 fi
 
-npm run build && \
+if [[ $2 == 'wo-build' ]]
+then
+    npm_build=
+else
+    npm_build="npm run build"
+fi
+
+eval $npm_build && \
 git add . && git commit -m "$git_commit_msg" && git push && \
 cp build/ckeditor.js ../iriversland2/frontend/src/assets/ckeditor.js && \
 echo SUCCESS && return

@@ -44,6 +44,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "ckeditor5-embed": "^1.0.4",
     "postcss-loader": "^2.1.5",
     "raw-loader": "^0.5.1",
     "regenerator-runtime": "^0.12.1",

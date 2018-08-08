@@ -11,6 +11,8 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -32,6 +34,8 @@ CustomBalloonEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Strikethrough,
+	Code,
 	BlockQuote,
 	EasyImage,
 	Heading,
@@ -49,25 +53,29 @@ CustomBalloonEditor.builtinPlugins = [
 CustomBalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'undo',
-			'redo'
-		]
+			'heading', 'blockQuote', 'strikethrough', 'code', '|',
+			'bold', 'italic', 'bulletedList', 'numberedList', '|',
+			'imageUpload', '|', 'link'
+		],
 	},
+
 	image: {
 		toolbar: [
 			'imageStyle:full',
 			'imageStyle:side',
 			'|',
 			'imageTextAlternative'
+		]
+	},
+
+	heading: {
+		options: [
+			/** Customizing headings: https://docs.ckeditor.com/ckeditor5/latest/features/headings.html#configuring-heading-levels */
+			{ model: 'paragraph', title: 'Paragraph', view: { name: 'p', classes: '' }, priority: 'high' },
+			{ model: 'heading1', view: { name: 'h1', classes: '' }, title: 'Heading 1', priority: 'high' },
+			{ model: 'heading2', view: { name: 'h2', classes: '' }, title: 'Heading 2', priority: 'high' },
+			{ model: 'heading3', view: { name: 'h3', classes: '' }, title: 'Heading 3', priority: 'high' },
+			{ model: 'heading4', view: { name: 'h4', classes: '' }, title: 'Heading 4', priority: 'high' },
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.

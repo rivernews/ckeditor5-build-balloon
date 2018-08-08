@@ -7,7 +7,7 @@ else
     git_commit_msg="$1"
 fi
 
-if [[ $2 == 'wo-build' ]]
+if [[ $2 == 'nb' ]]
 then
     npm_build=
 else

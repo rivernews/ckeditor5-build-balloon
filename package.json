@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-balloon",
-  "version": "11.0.1",
-  "description": "The balloon editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "name": "@shaungc/ckeditor5-custom-balloon",
+  "version": "1.0.2",
+  "description": "A custom balloon editor build of CKEditor 5. Include commonly used plugins.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -15,16 +15,13 @@
     "editing",
     "operational transformation",
     "ot",
-    "collaboration",
-    "collaborative",
-    "real-time",
     "framework"
   ],
   "main": "./build/ckeditor.js",
   "files": [
     "build"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^10.0.2",
     "@ckeditor/ckeditor5-alignment": "^10.0.2",
     "@ckeditor/ckeditor5-autoformat": "^10.0.2",
@@ -58,13 +55,13 @@
     "node": ">=6.9.0",
     "npm": ">=3.0.0"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "Shaung Cheng shaungc.com",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com",
-  "bugs": "https://github.com/ckeditor/ckeditor5-build-balloon/issues",
+  "homepage": "https://shaungc.com",
+  "bugs": "https://github.com/rivernews/ckeditor5-build-balloon/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-balloon.git"
+    "url": "https://github.com/rivernews/ckeditor5-build-balloon.git"
   },
   "scripts": {
     "build": "webpack --mode production",

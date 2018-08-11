@@ -1,3 +1,8 @@
+### How to publish to npm
+
+- [See this post.](https://hackernoon.com/how-to-publish-your-package-on-npm-7fc1f5aae600)
+- If failed in Angualr, consider build ckeditor using es5. [See instructions.](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html#option-building-to-es5-target)
+
 CKEditor 5 balloon editor build
 ==============================================
 

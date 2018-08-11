@@ -18,7 +18,7 @@ module.exports = {
 	performance: { hints: false },
 
 	entry: [
-		require.resolve( 'regenerator-runtime/runtime.js' ),
+		// require.resolve( 'regenerator-runtime/runtime.js' ),
 		path.resolve( __dirname, 'src', 'ckeditor.js' )
 	],
 
@@ -85,17 +85,17 @@ module.exports = {
 					},
 				]
 			},
-			{
-				test: /\.js$/,
-				use: [
-					{
-						loader: 'babel-loader',
-						options: {
-							presets: [ require( 'babel-preset-env' ) ]
-						}
-					}
-				]
-			},
+			// {
+			// 	test: /\.js$/,
+			// 	use: [
+			// 		{
+			// 			loader: 'babel-loader',
+			// 			options: {
+			// 				presets: [ require( 'babel-preset-env' ) ]
+			// 			}
+			// 		}
+			// 	]
+			// },
 		]
 	}
 };

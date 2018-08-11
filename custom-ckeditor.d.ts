@@ -1,0 +1,1 @@
+declare module 'shaungc__ckeditor5-custom-balloon';

@@ -12,7 +12,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-// import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -25,30 +25,21 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-// import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-// import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
-// import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-// import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+export default class BalloonEditor extends BalloonEditorBase {}
 
-// import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
-
-// duplicated, deprecated packages
-// import Embed from 'ckeditor5-embed/src/embed';
-
-export default class CustomBalloonEditor extends BalloonEditorBase {}
-
-// Plugins to include in the build. 
-CustomBalloonEditor.builtinPlugins = [
+// Plugins to include in the build.
+BalloonEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
 	BlockQuote,
-	// CKFinder,
+	CKFinder,
 	EasyImage,
 	Heading,
 	Image,
@@ -59,50 +50,36 @@ CustomBalloonEditor.builtinPlugins = [
 	Indent,
 	Link,
 	List,
-	// Strikethrough,
-	// Code,
-	// Alignment,
-	// Embed,
-	// InsertUrlImage,
 	MediaEmbed,
 	Paragraph,
-	// PasteFromOffice,
+	PasteFromOffice,
 	Table,
 	TableToolbar
 ];
 
 // Editor configuration.
-CustomBalloonEditor.defaultConfig = {
+BalloonEditor.defaultConfig = {
 	toolbar: {
-		// items: [
-		// 	'heading', 'blockQuote', 'strikethrough', 'code', '|',
-		// 	'bold', 'italic', 'bulletedList', 'numberedList', '|',
-		// 	'alignment', 'indent', 'outdent', '|',
-		// 	'imageUpload', 'insertUrlImage', 'mediaEmbed', '|', 'link'
-        // ],
-        items: [
-			'heading', 'blockQuote', '|',
-			'bold', 'italic', 'bulletedList', 'numberedList', '|',
-			'indent', 'outdent', '|',
-			'imageUpload', 'mediaEmbed', '|', 'link'
-		],
-	},
-
-	heading: {
-		options: [
-			/** Customizing headings: https://docs.ckeditor.com/ckeditor5/latest/features/headings.html#configuring-heading-levels */
-			{ model: 'paragraph', title: 'Paragraph', view: { name: 'p', classes: '' }, priority: 'high' },
-			{ model: 'heading1', view: { name: 'h1', classes: '' }, title: 'Heading 1', priority: 'high' },
-			{ model: 'heading2', view: { name: 'h2', classes: '' }, title: 'Heading 2', priority: 'high' },
-			{ model: 'heading3', view: { name: 'h3', classes: '' }, title: 'Heading 3', priority: 'high' },
-			{ model: 'heading4', view: { name: 'h4', classes: '' }, title: 'Heading 4', priority: 'high' },
+		items: [
+			'heading',
+			'|',
+			'bold',
+			'italic',
+			'link',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
+			'imageUpload',
+			'blockQuote',
+			'insertTable',
+			'mediaEmbed',
+			'undo',
+			'redo'
 		]
 	},
-
-	// alignment: {
-	// 	options: [ 'left', 'right', 'center', 'justify' ]
-	// },
-
 	image: {
 		toolbar: [
 			'imageStyle:full',

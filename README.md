@@ -23,8 +23,6 @@ git merge upstream/stable
 
 The balloon editor build for CKEditor 5. Read more about the [balloon editor build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#balloon-editor) and see the [demo](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/balloon-editor.html).
 
-![CKEditor 5 balloon editor build screenshot](https://c.cksource.com/a/1/img/npm/ckeditor5-build-balloon.png)
-
 See the details at [ckeditor repo](https://github.com/ckeditor/ckeditor5-build-balloon).
 
 See:

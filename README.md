@@ -1,3 +1,19 @@
+## Logics for this forked repo
+
+### How to update upstream
+
+You first have to set up upstream repo.
+
+```
+
+git remote add upstream https://github.com/ckeditor/ckeditor5-build-balloon.git
+git fetch upstream
+git checkout master # this repo's master
+git merge upstream/stable
+
+```
+
+
 ### How to publish to npm
 
 - [See this post.](https://hackernoon.com/how-to-publish-your-package-on-npm-7fc1f5aae600)
@@ -27,51 +43,10 @@ See:
 
 ## Quick start
 
-First, install the build from npm:
-
-```bash
-npm install --save @ckeditor/ckeditor5-build-balloon
-```
-
-And use it in your website:
-
-```html
-<div id="editor">
-	<p>This is the editor content.</p>
-</div>
-<script src="./node_modules/@ckeditor/ckeditor5-build-balloon/build/ckeditor.js"></script>
-<script>
-	BalloonEditor
-		.create( document.querySelector( '#editor' ) )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( err => {
-			console.error( err.stack );
-		} );
-</script>
-```
-
-Or in your JavaScript application:
-
-```js
-import BalloonEditor from '@ckeditor/ckeditor5-build-balloon';
-
-// Or using the CommonJS version:
-// const BalloonEditor = require( '@ckeditor/ckeditor5-build-balloon' );
-
-BalloonEditor
-	.create( document.querySelector( '#editor' ) )
-	.then( editor => {
-		window.editor = editor;
-	} )
-	.catch( err => {
-		console.error( err.stack );
-	} );
-```
+See details at [ckeditor 5 repo](https://github.com/ckeditor/ckeditor5-build-balloon).
 
 **Note:** If you are planning to integrate CKEditor 5 deep into your application, it is actually more convenient and recommended to install and import the source modules directly (like it happens in `ckeditor.js`). Read more in the [Advanced setup guide](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html).
 
 ## License
 
-Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html). For full details about the license, please check the `LICENSE.md` file or [https://ckeditor.com/legal/ckeditor-oss-license](https://ckeditor.com/legal/ckeditor-oss-license).
+See the details at [ckeditor repo](https://github.com/ckeditor/ckeditor5-build-balloon).

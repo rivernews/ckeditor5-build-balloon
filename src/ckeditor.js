@@ -29,11 +29,14 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
-import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+// import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+// import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+// import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+
+// import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
+
+// duplicated, deprecated packages
 // import Embed from 'ckeditor5-embed/src/embed';
-import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
 
 export default class CustomBalloonEditor extends BalloonEditorBase {}
 
@@ -56,11 +59,11 @@ CustomBalloonEditor.builtinPlugins = [
 	Indent,
 	Link,
 	List,
-	Strikethrough,
-	Code,
-	Alignment,
+	// Strikethrough,
+	// Code,
+	// Alignment,
 	// Embed,
-	InsertUrlImage,
+	// InsertUrlImage,
 	MediaEmbed,
 	Paragraph,
 	// PasteFromOffice,
@@ -71,11 +74,17 @@ CustomBalloonEditor.builtinPlugins = [
 // Editor configuration.
 CustomBalloonEditor.defaultConfig = {
 	toolbar: {
-		items: [
-			'heading', 'blockQuote', 'strikethrough', 'code', '|',
+		// items: [
+		// 	'heading', 'blockQuote', 'strikethrough', 'code', '|',
+		// 	'bold', 'italic', 'bulletedList', 'numberedList', '|',
+		// 	'alignment', 'indent', 'outdent', '|',
+		// 	'imageUpload', 'insertUrlImage', 'mediaEmbed', '|', 'link'
+        // ],
+        items: [
+			'heading', 'blockQuote', '|',
 			'bold', 'italic', 'bulletedList', 'numberedList', '|',
-			'alignment', 'indent', 'outdent', '|',
-			'imageUpload', 'insertUrlImage', 'mediaEmbed', '|', 'link'
+			'indent', 'outdent', '|',
+			'imageUpload', 'mediaEmbed', '|', 'link'
 		],
 	},
 
@@ -90,9 +99,9 @@ CustomBalloonEditor.defaultConfig = {
 		]
 	},
 
-	alignment: {
-		options: [ 'left', 'right', 'center', 'justify' ]
-	},
+	// alignment: {
+	// 	options: [ 'left', 'right', 'center', 'justify' ]
+	// },
 
 	image: {
 		toolbar: [

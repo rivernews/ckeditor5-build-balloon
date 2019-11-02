@@ -34,6 +34,7 @@ import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 // import Embed from 'ckeditor5-embed/src/embed';
 import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
+import KeyboardShortcuts from "./keyboard-shortcut/keyboard-shortcuts";
 
 export default class CustomBalloonEditor extends BalloonEditorBase {}
 
@@ -65,7 +66,8 @@ CustomBalloonEditor.builtinPlugins = [
 	Paragraph,
 	// PasteFromOffice,
 	Table,
-	TableToolbar
+    TableToolbar,
+    KeyboardShortcuts
 ];
 
 // Editor configuration.

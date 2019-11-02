@@ -6,14 +6,14 @@ The motivation to fork and create our own Ckeditor build is a better user experi
 
 That said, I'll fetch from upstream from time to time to ensure the core engine are up to date.
 
-What did we add on top of the original Ckeidtor upstream?
+What did we add on top of the original Ckeditor upstream?
 - Some official Ckeditor plugin that are not included in balloon editor 
     - Alignment
     - Strikethrough
     - Code
 - Some useful plugins written by me
     - Add image by url
-    - Keyborad shortcut: based on the heuristics - **Flexibility and efficiency of use**.
+    - Keyborad shortcut: for headings, bullet points (strikethrough already built-in, ctrl+shift+x). In gernal following the keymap of Google Doc. Improvement based on the heuristics - **Flexibility and efficiency of use**.
 - Some custom config to enpower the plugins and improve user experience ❤️️️️ 
     - Standard 4-level headings plus a paragraph.
     - Alignment options

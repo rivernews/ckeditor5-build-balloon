@@ -73,7 +73,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "build-dev": "webpack --mode development",
-    "patch-publish": "npm version patch",
+    "patch-publish": "npm version patch && npm publish",
     "lint": "eslint --quiet '**/*.js'",
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
   },

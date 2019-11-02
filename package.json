@@ -1,6 +1,6 @@
 {
   "name": "@shaungc/ckeditor5-custom-balloon",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A custom balloon editor build of CKEditor 5. Include commonly used plugins.",
   "keywords": [
     "wysiwyg",

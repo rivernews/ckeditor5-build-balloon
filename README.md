@@ -13,7 +13,7 @@ What did we add on top of the original Ckeditor upstream?
     - Code
 - Some useful plugins written by me
     - Add image by url
-    - Keyborad shortcut: for headings, bullet points (strikethrough already built-in, ctrl+shift+x). In gernal following the keymap of Google Doc. Improvement based on the heuristics - **Flexibility and efficiency of use**.
+    - Keyborad shortcut: for headings, bullet points (strikethrough already built-in, ctrl+shift+x). In gernal following the keymap of Google Doc. Improvement based on the heuristics - [**Flexibility and efficiency of use**](https://en.wikipedia.org/wiki/Heuristic_evaluation).
 - Some custom config to enpower the plugins and improve user experience ❤️️️️ 
     - Standard 4-level headings plus a paragraph.
     - Alignment options

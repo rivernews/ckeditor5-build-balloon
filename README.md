@@ -40,8 +40,12 @@ git merge upstream/stable
 
 ```
 
+### How to update code and release to npm
 
-### How to publish to npm
+1. Commit code in git, give commit message.
+1. Run `npm run patch-publish`.
+
+### How to publish to npm (only the first time when `package.json` release command not yet set)
 
 - [See this post.](https://hackernoon.com/how-to-publish-your-package-on-npm-7fc1f5aae600)
 - How to create public, scoped package? `npm publish --access public`. [See this npm official page](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages).

@@ -44,6 +44,7 @@ git merge upstream/stable
 ### How to publish to npm
 
 - [See this post.](https://hackernoon.com/how-to-publish-your-package-on-npm-7fc1f5aae600)
+- How to create public, scoped package? `npm publish --access public`. [See this npm official page](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages).
 - If failed in Angualr, consider build ckeditor using es5. [See instructions.](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html#option-building-to-es5-target)
 
 ## Documentation

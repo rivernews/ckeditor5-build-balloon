@@ -20,10 +20,10 @@ What did we add on top of the original Ckeditor upstream?
 
 ## Relevant repository
 
-- Our custom [Ckeditor balloon build](https://github.com/rivernews/ckeditor5-build-balloon). This Ckeditor React repository serves like an adapter between vanilla Ckeditor and the React framework, that means you can switch the vanilla Ckeditor5 part with any other variant you want - say it's the offical or somebody else custom build like me.
+- Our custom [Ckeditor React build](https://github.com/rivernews/ckeditor5-react). This Ckeditor React repository serves like an adapter between vanilla Ckeditor and the React framework, that means you can switch the vanilla Ckeditor5 part with any other variant you want - say it's the offical or somebody else custom build like this repo.
 - User facing apps
     - [Appl Tracky](https://github.com/rivernews/appl-tracky-spa). Written in React, this frontend SPA uses this repo as a npm package with our custom balloon build mentioned above.
-    - [Iriversland2](https://github.com/rivernews/iriversland2-spa) - my personal website which use Ckeditor. It's written in Angular so does not use this repo, but uses my custom build of Ckeditor balloon editor.
+    - [Iriversland2](https://github.com/rivernews/iriversland2-spa) - my personal website which use Ckeditor. Uses my custom build of Ckeditor balloon editor in this repo.
 
 ## Logics for this forked repo
 

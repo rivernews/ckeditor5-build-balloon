@@ -35,6 +35,9 @@
 <div>
 	<button onclick="setData()">setData(local doc)</button>
 </div>
+<div>
+	<button onclick="toggleReadOnly()">toggle read only mode</button>
+</div>
 
 <script src="../build/ckeditor.js"></script>
 <script>
@@ -65,7 +68,11 @@
 	function setData() {
 		editor.setData(doc);
 		console.log('editor data is now:', editor.getData());
-	}
+    }
+    
+    function toggleReadOnly() {
+        editor.isReadOnly = !editor.isReadOnly;
+    }
 </script>
 
 </body>

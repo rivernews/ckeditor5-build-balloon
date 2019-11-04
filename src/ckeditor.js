@@ -31,14 +31,14 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 // import Embed from 'ckeditor5-embed/src/embed';
-import InsertUrlImage from "./insert-image-by-url/insert-image-by-url";
-import KeyboardShortcuts from "./keyboard-shortcut/keyboard-shortcuts";
+import InsertUrlImage from './insert-image-by-url/insert-image-by-url';
+import KeyboardShortcuts from './keyboard-shortcut/keyboard-shortcuts';
 
 export default class CustomBalloonEditor extends BalloonEditorBase {}
 
-// Plugins to include in the build. 
+// Plugins to include in the build.
 CustomBalloonEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
@@ -66,8 +66,8 @@ CustomBalloonEditor.builtinPlugins = [
 	Paragraph,
 	// PasteFromOffice,
 	Table,
-    TableToolbar,
-    KeyboardShortcuts
+	TableToolbar,
+	KeyboardShortcuts
 ];
 
 // Editor configuration.
@@ -104,6 +104,16 @@ CustomBalloonEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
+
+	addTargetToLinks: {
+		mode: 'manual',
+		label: 'Open in new tab',
+		attributes: {
+			target: '_blank',
+			rel: 'noopener noreferrer'
+		}
+	},
+
 	table: {
 		contentToolbar: [
 			'tableColumn',

@@ -156,8 +156,14 @@ CustomBalloonEditor.defaultConfig = {
                     */
 					/^(https?:)?\/\//.test( url ) &&
 
-                    /* create external links for google.com */
-                    /^\/[^/]/.test( url )
+                    /* create external links for google.com,
+                        but not for /google.com.
+                        
+                        Internal page is defined by an url started by `/...`; otherwise we treat url as external.
+
+                        This requires all internal url to specify its full relative path against hostname.
+                    */
+                    !/^\/[^/]/.test( url )
 				),
 				// label: 'Open in new tab', /* only needed when in manual mode */
 				attributes: {

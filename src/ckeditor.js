@@ -148,8 +148,18 @@ CustomBalloonEditor.defaultConfig = {
 	link: {
 		decorators: {
 			addTargetToLinks: {
-				mode: 'manual',
-				label: 'Open in new tab',
+				mode: 'automatic',
+				callback: url => (
+
+					/* create external links for
+                        http://google.com, https://google.com and //google.com
+                    */
+					/^(https?:)?\/\//.test( url ) &&
+
+                    /* create external links for google.com */
+                    /^\/[^/]/.test( url )
+				),
+				// label: 'Open in new tab', /* only needed when in manual mode */
 				attributes: {
 					target: '_blank',
 					rel: 'noopener noreferrer'

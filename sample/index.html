@@ -38,6 +38,9 @@
 <div>
 	<button onclick="toggleReadOnly()">toggle read only mode</button>
 </div>
+<div>
+	<button onclick="logEditor()">print editor in console</button>
+</div>
 
 <script src="../build/ckeditor.js"></script>
 <script>
@@ -72,6 +75,10 @@
     
     function toggleReadOnly() {
         editor.isReadOnly = !editor.isReadOnly;
+    }
+
+    function logEditor() {
+        console.log(editor);
     }
 </script>
 

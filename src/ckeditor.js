@@ -74,21 +74,61 @@ CustomBalloonEditor.builtinPlugins = [
 CustomBalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading', 'blockQuote', 'strikethrough', 'code', '|',
-			'bold', 'italic', 'bulletedList', 'numberedList', '|',
-			'alignment', 'indent', 'outdent', '|',
-			'imageUpload', 'insertUrlImage', 'mediaEmbed', '|', 'link'
-		],
+			'heading',
+			'blockQuote',
+			'strikethrough',
+			'code',
+			'|',
+			'bold',
+			'italic',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'alignment',
+			'indent',
+			'outdent',
+			'|',
+			'imageUpload',
+			'insertUrlImage',
+			'mediaEmbed',
+			'|',
+			'link'
+		]
 	},
 
 	heading: {
 		options: [
 			/** Customizing headings: https://docs.ckeditor.com/ckeditor5/latest/features/headings.html#configuring-heading-levels */
-			{ model: 'paragraph', title: 'Paragraph', view: { name: 'p', classes: '' }, priority: 'high' },
-			{ model: 'heading1', view: { name: 'h1', classes: '' }, title: 'Heading 1', priority: 'high' },
-			{ model: 'heading2', view: { name: 'h2', classes: '' }, title: 'Heading 2', priority: 'high' },
-			{ model: 'heading3', view: { name: 'h3', classes: '' }, title: 'Heading 3', priority: 'high' },
-			{ model: 'heading4', view: { name: 'h4', classes: '' }, title: 'Heading 4', priority: 'high' },
+			{
+				model: 'paragraph',
+				title: 'Paragraph',
+				view: { name: 'p', classes: '' },
+				priority: 'high'
+			},
+			{
+				model: 'heading1',
+				view: { name: 'h1', classes: '' },
+				title: 'Heading 1',
+				priority: 'high'
+			},
+			{
+				model: 'heading2',
+				view: { name: 'h2', classes: '' },
+				title: 'Heading 2',
+				priority: 'high'
+			},
+			{
+				model: 'heading3',
+				view: { name: 'h3', classes: '' },
+				title: 'Heading 3',
+				priority: 'high'
+			},
+			{
+				model: 'heading4',
+				view: { name: 'h4', classes: '' },
+				title: 'Heading 4',
+				priority: 'high'
+			}
 		]
 	},
 
@@ -105,21 +145,21 @@ CustomBalloonEditor.defaultConfig = {
 		]
 	},
 
-	addTargetToLinks: {
-		mode: 'manual',
-		label: 'Open in new tab',
-		attributes: {
-			target: '_blank',
-			rel: 'noopener noreferrer'
+	link: {
+		decorators: {
+			addTargetToLinks: {
+				mode: 'manual',
+				label: 'Open in new tab',
+				attributes: {
+					target: '_blank',
+					rel: 'noopener noreferrer'
+				}
+			}
 		}
 	},
 
 	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
+		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
